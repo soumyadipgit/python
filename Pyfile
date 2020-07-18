@@ -2,9 +2,10 @@ pipeline {
    agent any {
         stages {
 		      stage('test') {
+		         steps {
 			        '''python3 dir.py'''
 				}
 			}
 		}
 	}
-	
+}	
